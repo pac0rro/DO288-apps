@@ -21,6 +21,9 @@ server.get(/\/todo\/?.*/, restify.serveStatic({
     'default': 'index.html'
 }));
 
+
+console.log("Messsage to show: " + process.env.PROCESS_TO_SHOW);
+
 var port = process.env.PORT || 8080;
 server.listen(port, function (err) {
     if (err)
