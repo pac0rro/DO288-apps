@@ -22,7 +22,7 @@ server.get(/\/todo\/?.*/, restify.serveStatic({
 }));
 
 
-console.log("Messsage to show: " + process.env.PROCESS_TO_SHOW);
+console.log("Messsage to show: " + process.env.MESSAGE_TO_SHOW);
 
 var port = process.env.PORT || 8080;
 server.listen(port, function (err) {
